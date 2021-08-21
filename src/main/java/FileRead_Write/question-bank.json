@@ -1,0 +1,20 @@
+[
+  {
+    "Question": "What is the city of India?",
+    "option-1": "Dhaka",
+    "option-2": "Delhi",
+    "Answer": "2"
+  },
+  {
+    "Question": "What is the city of Bangladesh?",
+    "option-1": "Dhaka",
+    "option-2": "Delhi",
+    "Answer": "1"
+  },
+  {
+    "Question": "What is the city of England?",
+    "option-1": "Karachi",
+    "option-2": "London",
+    "Answer": "2"
+  }
+]

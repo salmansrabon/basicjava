@@ -8,13 +8,13 @@ public class MyDateTIme {
     public static void main(String[] args) throws ParseException {
         Date date=new Date();
         System.out.println(date);
-        SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-y hh:mm:ss aa");
+        SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-y HH:mm:ss aa");
         String d1= sdf.format(date);
         System.out.println(d1);
         long timestamp=date.getTime();
         System.out.println(timestamp);
         String d3= sdf.format(timestamp);
-        System.out.println(d3);
+        System.out.println("Current time: "+d3);
 
         String d4="01-08-2021 00:00:00 PM";
         Date thatDay=sdf.parse(d4);

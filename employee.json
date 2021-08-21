@@ -1,0 +1,10 @@
+{
+  "Designation": "Software Engineer",
+  "Department": "IT",
+  "address": {
+    "Area": "Gulshan",
+    "City": "Dhaka",
+    "PO": "Gulshan-1"
+  },
+  "name": "Mr. Rafig"
+}

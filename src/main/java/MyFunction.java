@@ -20,8 +20,8 @@ public class MyFunction {
             return true;
         }
         else{
-            return false;
         }
+            return false;
     }
 
 }

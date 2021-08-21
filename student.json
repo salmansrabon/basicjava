@@ -1,0 +1,32 @@
+[
+  {
+    "Question": "What is the city of India?",
+    "option-1": "Dhaka",
+    "option-2": "Delhi",
+    "Answer": "2"
+  },
+  {
+    "name": "Kamal",
+    "roll": "10",
+    "section": "B",
+    "class": "10"
+  },
+  {
+    "name": "Shahin",
+    "roll": "2",
+    "section": "A",
+    "class": "10"
+  },
+  {
+    "name": "Md.",
+    "roll": "5",
+    "section": "A",
+    "class": "Sohel"
+  },
+  {
+    "name": "Md. Sohel",
+    "roll": "12",
+    "section": "A",
+    "class": "10"
+  }
+]
