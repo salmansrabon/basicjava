@@ -17,10 +17,10 @@ public class MyJSON {
     public static void main(String[] args) throws IOException, ParseException {
         //writeJSON();
         //readJSON();
-        //writeJSONList();
-        readJSONList(2);
-
-
+        writeJSONList();
+        //readJSONList(2);
+        //updateJSONList(0);
+        //deleteJSONList(0);
     }
 
     public static void writeJSON() throws IOException {
@@ -111,7 +111,33 @@ public class MyJSON {
         System.out.println(roll);
         System.out.println(section);
         System.out.println(_class);
-
+    }
+    public static void updateJSONList(int pos) throws IOException, ParseException {
+        String fileName="student.json";
+        JSONParser jsonParser = new JSONParser();
+        Object obj = jsonParser.parse(new FileReader(fileName));
+        JSONArray jsonArray = (JSONArray) obj;
+        JSONObject jsonObject = (JSONObject) jsonArray.get(pos);
+        jsonObject.put("class","9");
+        FileWriter file = new FileWriter(fileName);
+        file.write(jsonArray.toJSONString());
+        file.flush();
+        file.close();
+        System.out.println("Saved!");
+        System.out.print(jsonArray);
+    }
+    public static void deleteJSONList(int pos) throws IOException, ParseException {
+        String fileName="student.json";
+        JSONParser jsonParser = new JSONParser();
+        Object obj = jsonParser.parse(new FileReader(fileName));
+        JSONArray jsonArray = (JSONArray) obj;
+        jsonArray.remove(pos);
+        FileWriter file = new FileWriter(fileName);
+        file.write(jsonArray.toJSONString());
+        file.flush();
+        file.close();
+        System.out.println("Saved!");
+        System.out.print(jsonArray);
     }
 }
 
